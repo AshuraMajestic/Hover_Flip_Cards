@@ -1,0 +1,85 @@
+body {
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: darkgoldenrod;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1110px;
+    margin: 40px auto;
+    height: 330px;
+}
+
+.cards {
+    height: 550px;
+    width: 330px;
+    float: left;
+    margin: 0px 20px;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.front {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+}
+
+.back {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    transform: rotateY(180deg);
+}
+
+#front1 {
+    background-image: url(slide1.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+#front1 {
+    background-image: url(slide1.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+#front2 {
+    background-image: url(slide4.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+#front3 {
+    background-image: url(slide2.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+#back1 {
+    background-image: url(slide6.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+#back2 {
+    background-image: url(slide5.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+#back3 {
+    background-image: url(slide6.png);
+    background-size: 330px 100%;
+    background-repeat: no-repeat;
+}
+
+.cards:hover {
+    transform: rotateY(180deg);
+}
